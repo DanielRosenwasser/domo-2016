@@ -1,0 +1,9 @@
+<div class="submission">
+  <br *ngIf="position > 0" />
+  <span class="title">
+    <span>{{position + 1}}. </span>
+    <a href={{data.url}}>{{data.title}}</a>
+  </span>
+  <span> ({{data.domain}})</span>
+  <div>Submitted at {{data.created_utc * 1000 | date:"mediumTime"}}.</div>
+</div>
